@@ -1,4 +1,11 @@
-const type = document.getElementById('activity-type').value;
+const gifDiv = document.getElementById('gifs')
+const gif = document.createElement('img')
 
-const gifs = document.getElementById('gifs')
+gif.classList = 'gif-style'
+
+gifDiv.appendChild(gif)
+
+
+
+
 
