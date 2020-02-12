@@ -18,7 +18,7 @@ const postTenor = (req,postRes) => {
             const bodyy = JSON.parse(body);
           imgUrl  = bodyy.results[0].media[0].gif.url;
         
-          postRes.send({imgurls:imgUrl})
+          postRes.send({imgurls:imgUrl, activityTitle: activity})
           
         } )
         
