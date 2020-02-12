@@ -1,0 +1,35 @@
+body {
+    margin:50px 0px; 
+    padding:0px;
+    text-align:center;
+ box-align:center;
+}
+
+.search{
+    background-color: rgb(179, 102, 159);
+    color:rgb(99, 164, 180);
+    margin: 20px  ;
+    padding: 40px;
+
+  }
+.searchtitle{
+  color: rgb(15, 8, 12);
+}
+.searchlabel{
+  color: rgb(46, 4, 26); 
+}
+.searchform{
+  background-color: rgb(179, 102, 169); 
+}
+  @media only screen and (max-width: 60px) {
+  .searchbtn{
+    margin: auto;
+    width: 5%;
+    border: 3px solid rgb(19, 18, 18);
+    padding: 10px;
+  }
+}
+
+
+
+
