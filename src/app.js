@@ -23,14 +23,14 @@ app.use(express.static(path.join(__dirname,'..','public'), { maxAge: '30d' }));
 
 
 app.get('/giphy', giphy.getGiphy)
-app.post('/giphy', giphy.postGiphy)
+app.post('/giphy/:type', giphy.postGiphy)
 
 app.get('/tenor', tenor.getTenor)
 app.post('/tenor/:type', tenor.postTenor)
 
 
-app.use(error.notFound)
-app.use(error.severError);
+// app.use(error.notFound)
+// app.use(error.severError);
 
 
 app.listen(app.get('port'), ()=> {

@@ -1,8 +1,6 @@
 const path = require('path');
 const request = require('request')
 
-let img = document.createElement('img');
-const gifs = document.getElementById('gifs')
 
 const getGiphy = (req, res) =>{
    
@@ -10,18 +8,18 @@ const getGiphy = (req, res) =>{
 }
 
 const postGiphy = (req,res) => {
-const type = req.body.type;
-console.log(type);
+const type = req.params.type;
+let gifUrl;
+
 request.get(`http://www.boredapi.com/api/activity?type=${type}`, function (error, response, body) {
     const randomActivity = JSON.parse(body).activity;
-    console.log(randomActivity)   
-    request.get(`http://api.giphy.com/v1/gifs/search?q=${randomActivity}&limit=3&api_key=PjePAILYBVdogMvZdg6PaRPNAQoLmbIX`, function (error, response, body2) {
-        
-        const gifUrl =JSON.parse(body2).data[0].embed_url;
-        console.log(gifUrl)
-})
-res.redirect('/giphy') 
 
+    request.get(`http://api.giphy.com/v1/gifs/search?q=${randomActivity}&limit=3&api_key=PjePAILYBVdogMvZdg6PaRPNAQoLmbIX`, function (error, response, body) {
+        const  body2 =   JSON.parse(body)
+        gifUrl =body2.data[0].id;
+        console.log(gifUrl)
+        res.send({gifurls: gifUrl})
+})
 })
 }
 module.exports = {getGiphy , postGiphy};
