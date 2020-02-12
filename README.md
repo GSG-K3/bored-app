@@ -16,7 +16,7 @@ that Server suggests about it.
  1- Create server express.<br>
  2-Split  task to moudule (giphy :get and post,toner :get and post ).<br>
  3- The data is on the server.<br>
- 4- use DOM to get resonce  from server and view in the browser.<br>
+ 4- use DOM to get responce  from server and view in the browser.<br>
 
 
 # user journey
