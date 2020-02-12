@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+
     <title>Bored Appliction</title>
   </head>
   <body>
+
     <section class="search">
       <h1 class="search__title">Enjoy your time with US</h1>
-      <form class="search__form" action="/tenor">
 
+      <form class="search__form" action="/tenor" method="post">
         <label for="menu" class="search__label">select</label>
-        <select id="menu" class="search__menu" name="activity">
+        <select id="menu" class="search__menu" name="type">
           <option value="music">music</option>
-        <option value="eduction">eduction</option>
+        <option value="education">eduction</option>
 
       </select>
 
-      <input class="search__btn" type="submit" value="tenor"></input>
-      <!-- <input class="search__btn" type="submit" value="giphy" ></input> -->
+      <input class="search__btn" type="submit" value="tenor"/>
       </form>
-      
+  
     </section>
+  <div id="image"></div>
   </body>
   <script src="index.js"></script>
 </html>
