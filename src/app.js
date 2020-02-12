@@ -26,7 +26,7 @@ app.get('/giphy', giphy.getGiphy)
 app.post('/giphy', giphy.postGiphy)
 
 app.get('/tenor', tenor.getTenor)
-app.post('/tenor', tenor.postTenor)
+app.post('/tenor/:type', tenor.postTenor)
 
 
 app.use(error.notFound)
