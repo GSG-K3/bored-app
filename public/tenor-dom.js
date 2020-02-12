@@ -2,8 +2,10 @@ const searchForm = document.getElementById("search__form");
 const imgDiv = document.getElementById("image")
 const img = document.createElement('img');
 const selectMenu = document.getElementById('menu')
+const title = document.createElement('h1');
 
 let xhr = new XMLHttpRequest;
+imgDiv.appendChild(title)
 imgDiv.appendChild(img)
 
 // Get APIs
@@ -25,6 +27,7 @@ searchForm.addEventListener('submit', (e)=>{
     e.preventDefault();
    let type = selectMenu.value;
     apiCall(`/tenor/${type}`,(res)=>{
+        title.innerHTML = res.activityTitle;
         img.src= res.imgurls ;
         })
 } )

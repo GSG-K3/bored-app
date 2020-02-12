@@ -17,8 +17,7 @@ request.get(`http://www.boredapi.com/api/activity?type=${type}`, function (error
     request.get(`http://api.giphy.com/v1/gifs/search?q=${randomActivity}&limit=3&api_key=PjePAILYBVdogMvZdg6PaRPNAQoLmbIX`, function (error, response, body) {
         const  body2 =   JSON.parse(body)
         gifUrl =body2.data[0].id;
-        console.log(gifUrl)
-        res.send({gifurls: gifUrl})
+        res.send({gifurls: gifUrl, activityTitle: randomActivity})
 })
 })
 }
