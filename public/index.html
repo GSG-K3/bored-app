@@ -7,16 +7,21 @@
     <title>Bored Appliction</title>
   </head>
   <body>
-    <section class="menu">
-      <h1 class="menu__header">Enjoy your time with US</h1>
-      <select id="menu__select" class="menu__select">
-        <option value="music">music</option>
+    <section class="search">
+      <h1 class="search__title">Enjoy your time with US</h1>
+      <form class="search__form" action="/tenor">
+
+        <label for="menu" class="search__label">select</label>
+        <select id="menu" class="search__menu" name="activity">
+          <option value="music">music</option>
         <option value="eduction">eduction</option>
 
       </select>
 
-      <button>Search with GIPHY</button>
-      <button>Search with</button>
+      <input class="search__btn" type="submit" value="tenor"></input>
+      <!-- <input class="search__btn" type="submit" value="giphy" ></input> -->
+      </form>
+      
     </section>
   </body>
   <script src="index.js"></script>
