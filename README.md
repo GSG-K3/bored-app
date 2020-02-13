@@ -4,29 +4,48 @@
  2- use server (app.js) file.<br>
  3- use request.<br>
  4- use express.<br>
- 5- in html gify we have  btn (gify)and menue selector.<br>
- 6- in  html tenor label for menu , use input to search btn.<br>
  
 # What 
-Our project displays activity from menue, When we presses giphy he gets the picture
+Our project displays  the type of the activity from menue, When we presses giphy he gets the picture
 that Server suggests about it.
-
 
 # How 
  1- Create server express.<br>
  2-Split  task to moudule (giphy :get and post,toner :get and post ).<br>
  3- The data is on the server.<br>
  4- use DOM to get responce  from server and view in the browser.<br>
-
-
+ 
 # user journey
-1-As a user,he can pick activity from menue to search.<br>
-2-As a user, he can pick giphy to get activity photos.<br>
+1- As a user i should see a type of activity from menu to search.<br>
+2-As a user i should see giphy or tenor to get activity photos.<br>
 
-
-
-
-
+### File Structure: 
+- public 
+    - giphy.html<br>
+    - giphy.css<br>
+    -index.js<br>
+    -tenor.html<br>
+- src<br>
+  -controllers<br>
+     --error.js<br>
+     --giphy.js<br>
+     --tenor.js<br>
+     --app.js<br>
+     
+ ### EndPoints:
+  1- 1st Endpoint  =>  Home Page
+    you can select use tenor or use giphy.
+  2- 2nd EndPoint => use giphy
+     GET request => respond.
+     Display giphy
+  3- 3rd EndPoint =>use tenor
+    Display details about activity
+     
+ ### Instructions :
+  - clone the repo and be there (cd command)
+  - npm i
+  - npm start
+   
 Team:<br>
 Hanan <br>
 Rahef<br> 

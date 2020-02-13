@@ -4,6 +4,7 @@ const activityType = document.getElementById('menu');
 const gif = document.createElement('img')
 const title = document.createElement('h1');
 
+gif.classList.add("gif__style");
 
 let xhr = new XMLHttpRequest();
 gifDiv.appendChild(title)

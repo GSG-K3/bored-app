@@ -4,6 +4,7 @@ const img = document.createElement('img');
 const selectMenu = document.getElementById('menu')
 const title = document.createElement('h1');
 
+
 let xhr = new XMLHttpRequest;
 imgDiv.appendChild(title)
 imgDiv.appendChild(img)
