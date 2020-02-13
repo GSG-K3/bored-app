@@ -1,42 +1,77 @@
-body{
+*{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
-.search__title{
+
+body{
     display: flex;
-    justify-content: center;
-    background-color: rgb(230, 158, 25);
-    padding: 10px;
-    margin: 10px;
-    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search__title{
+    background-color: rgba(54, 144, 13, 0.568);
+    padding: 50px ;
+    color: rgb(46, 54, 43);
     font-size: 30px;
+    font-family: 'Rakkas', cursive;
+
 }
  
 .search__label{
-    padding: 6px;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: rgb(40, 40, 240);
-    color: white;
-    font-size: 25px;
+    font-family: 'Rakkas', cursive;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
 }
-.search__btn,.search__menu{
-    background-color: rgb(40, 40, 240);
-    color: white;
-    padding: 5px;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 5px;
-}
+
 .search__form{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: space-between    ;
+margin: 20px ;
 }
- .image{ 
-    width: 300px;
-    display: flex;
-    justify-content: center;
-   align-content: space-around;
-}   
+
+.search__menu{
+background-color: rgba(54, 144, 13, 0.568);
+padding: 10px 20px;
+font-size: 20px;
+font-family: 'Rakkas', cursive;
+font-weight: bold;
+border-color: black;
+}
+
+ .search__btn  {
+    background-color: rgba(54, 144, 13, 0.568);
+    margin: 20px;
+    padding: 10px 25px;
+    border: 1px solid rgb(82, 219, 19) ;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'Rakkas', cursive;
+    font-weight: bold;
+    border-color: black;
+}
+
+.home__btn{
+    background-color: rgba(54, 144, 13, 0.568);
+    margin: 20px;
+    padding: 10px 25px;
+    border: 1px solid rgb(82, 219, 19) ;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'Rakkas', cursive;
+    font-weight: bold;
+    border-color: black;
+    width: 50%;
+}
+
+.activity__img{
+width: 300px;
+height: 200px;
+
+}
+.home__btn a, .search__btn a{
+   color: rgb(46, 54, 43);
+   text-decoration: none;
+   font-family: 'Rakkas', cursive;
+    font-size: 20px;
+}

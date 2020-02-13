@@ -35,6 +35,4 @@ app.use(error.notFound)
 app.use(error.severError);
 
 
-app.listen(app.get('port'), ()=> {
-    console.log('app is running', app.get('port'))
-})
+app.listen(app.get('port'))

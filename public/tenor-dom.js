@@ -7,7 +7,7 @@ const title = document.createElement('h1');
 let xhr = new XMLHttpRequest;
 imgDiv.appendChild(title)
 imgDiv.appendChild(img)
-
+img.classList.add("activity__img")
 // Get APIs
 let apiCall = (url, callback) => {
     xhr.onreadystatechange = () => {
@@ -29,5 +29,6 @@ searchForm.addEventListener('submit', (e)=>{
     apiCall(`/tenor/${type}`,(res)=>{
         title.innerHTML = res.activityTitle;
         img.src= res.imgurls ;
+        img.alt = "Gif describes the activity"
         })
 } )
