@@ -10,7 +10,7 @@ const app =express();
 // disable powered by express header
 app.disable('x-powered-by')
 
-app.set('port',3000)
+app.set('port',process.env.PORT||3000)
 
 app.use(compression())
 
