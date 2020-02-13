@@ -14,7 +14,7 @@ const postTenor = (req,postRes) => {
     request.get(`http://www.boredapi.com/api/activity?type=${activityType}`, (err,res, body) => {
        let activity = JSON.parse(body).activity;
        
-        request.get(`https://api.tenor.com/v1/search?tag=${activity}&key=${TENOR_API_KEY}`, (err,res, body) =>{
+        request.get(`https://api.tenor.com/v1/search?tag=${activity}&key=${process.env.TENOR_API_KEY}`, (err,res, body) =>{
             let bodyObject = JSON.parse(body);
             imgUrl  = bodyObject.results[0].media[0].gif.url;
             
