@@ -21,16 +21,16 @@ that Server suggests about it.
 
 ### File Structure: 
 - public 
-    - giphy.html
-    - giphy.css
-    -index.js
-    -tenor.html
-- src
-  -controllers
-     --error.js
-     --giphy.js
-     --tenor.js
-     --app.js
+    - giphy.html<br>
+    - giphy.css<br>
+    -index.js<br>
+    -tenor.html<br>
+- src<br>
+  -controllers<br>
+     --error.js<br>
+     --giphy.js<br>
+     --tenor.js<br>
+     --app.js<br>
      
  ### EndPoints:
   1- 1st Endpoint  =>  Home Page
